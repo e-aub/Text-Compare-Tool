@@ -1,3 +1,14 @@
+const darkModeToggle = document.getElementById('darkmode-toggle');
+darkModeToggle.addEventListener('change', () => {
+   
+    if (darkModeToggle.checked) {
+        document.body.classList.add('dark-mode');
+    } else {
+        document.body.classList.remove('dark-mode');
+    }
+});
+
+
 function findDifferences(text1, text2) {
     var differences = [];
     for (var i = 0; i < text1.length; i++) {
