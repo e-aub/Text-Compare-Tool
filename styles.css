@@ -15,7 +15,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 90px;
     width: 100vw;
 }
 
@@ -68,6 +68,7 @@ header {
 .buttons-container{
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 60px;
     width: 100vw;
     margin-top: 10px;
@@ -91,6 +92,27 @@ header {
     color: #bfc1c4;
 }
 
+.small-buttons{
+    height: 40px;
+    width: 100px;
+    background-color: #3c4444;
+    color:white;
+    border: 0;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.small-buttons,
+.buttons{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.small-buttons:hover,
+.buttons:hover{
+    background-color: #5d6464;
+}
 /*costomise textareas*/
 .text-fields{
     width: 100vw;
@@ -120,4 +142,40 @@ header {
 
 textarea:focus{
     outline: 1px solid rgb(255, 255, 255);
+}
+
+/*costomising result bar*/
+.difference{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+
+#difference1,
+#difference2{
+    background-color: #3c4444;
+    color: white;
+    height: 30px;
+    width: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#match{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 400px;
+    color: white;
+    font-size: 20px;
+    background-color: #3a863a;    ;
+    border: 1px solid white;
+    border-radius: 5px;
 }
