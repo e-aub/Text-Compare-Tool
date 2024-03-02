@@ -154,8 +154,7 @@ textarea:focus{
     margin-bottom: -5px;
 }
 
-#difference1,
-#difference2{
+#difference1{
     background-color: #3c4444;
     color: white;
     height: 30px;
@@ -165,7 +164,7 @@ textarea:focus{
     border-radius: 5px;
     padding-top: 10px;
     padding-left: 10px;
-}
+    }
 
 #match{
     display: flex;
