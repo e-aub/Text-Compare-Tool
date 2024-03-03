@@ -1,4 +1,5 @@
 const darkModeToggle = document.getElementById('darkmode-toggle');
+
 darkModeToggle.addEventListener('change', () => {
    
     if (darkModeToggle.checked) {
@@ -32,23 +33,12 @@ var text2 = document.getElementById('field2').value;
 
 
     if (text1===text2){
-
-        console.log("yaap")
-
-        matchElement.style.backgroundColor ="#3a863a";
-        
-        difference1Element.style.backgroundColor ="#3c4444";
-
-        
-
-
-        
+        difference1Element.style.display ="none";
+        matchElement.style.display ="flex";
     }else{
-
         console.log("noo")
-       
-        matchElement.style.backgroundColor ="#3c4444";
-        difference1Element.style.backgroundColor ="#3a863a";
+        matchElement.style.display ="none";
+        difference1Element.style.display ="block";
         var differences = findDifferences(text1, text2);
         difference1Element.textContent = differences.join("| ")
 
@@ -61,7 +51,6 @@ function clr(){
     document.getElementById('field1').value = '';
     document.getElementById('field2').value = '';
     compareText()
-
 }
 function switsher(){
     let x=document.getElementById('field1').value
